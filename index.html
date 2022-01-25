@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --veigeclaro: #F2E6D5;
+            --veigeoscuro: #948673; 
+            --azuloscuro: #7193A6; 
+            --azulclaro: #D5E8F2;
+            --playfairdisplay: 'Playfair Display', serif;
+            --ptsans: 'PT Sans', sans-serif;
+        }
+        /*Aquí va todo lo del header*/
+        body>header{
+            width: 25%;
+            height: 100%;
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            background-color: var(--veigeclaro);
+        }
+        h1{
+            font-family: var(--playfairdisplay);
+            font-weight: 500;
+            font-size: 1.6em;
+            text-transform: uppercase;
+            margin-left:30px ;
+            margin-top: 40px;
+        }
+        h2{
+            font-family: var(--ptsans);
+            font-weight: 500;
+            font-size: 1em;
+            margin-left:30px ;
+            margin-right: 65px;
+        }
+        .footer{
+            font-family: var(--ptsans);
+            font-weight: 500;
+            font-size: 0.8em;
+            color: var(--veigeoscuro);
+            margin-left:30px ;
+            margin-right: 65px;
+        }
+        /*Aquí va todo lo del main*/
+        body>main{
+            width: 75%;
+            position: absolute;
+            margin-left: 25%;
+            background-color: var(--azulclaro);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            box-sizing: border-box;
+        }
+        .trabajo1 h2{
+            font-family: var(--playfairdisplay);
+            font-weight: 500;
+            font-size: 1.6em;
+            margin-left:30px ;
+        }
+        .trabajo1 p{
+            font-family: var(--ptsans);
+            font-weight: 500;
+            font-size: 1em;
+            color: var(--azuloscuro);
+            margin-left:30px;
+            margin-right: 65%;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .img_link{
+            width: 600px;
+            height: 450px;
+            display:block ;
+            margin-left: 45%;
+            margin-right: 0%;
+            margin-top: -130px;
+        }
+        @media (max-width: 768px){
+            body>header{
+                width: 100%;
+                height: 45%;
+            }
+            h1{
+                font-size: 1.5em;
+            }
+            h2{
+                font-size: 0.8em;
+                margin-right: 70%;
+            }
+            .footer{
+                font-size: 0.7em;
+            }
+            body>main{
+                width: 100vh;
+                margin-top: 42%;
+                margin-left: -1%;
+            }
+            .trabajo1{
+                width: 100vh;
+            }
+            .trabajo1 h2{
+                font-size: 1.5em;
+            }
+            .trabajo1 p{
+                font-size: 0.8em;
+            }
+            .img_link{
+                width: 50%;
+                margin-bottom: -140px;
+                margin-right: 0%;
+                margin-top: -90px;
+            }
+        }
+        @media (max-width:390px){
+            body>header{
+                width: 100vh;
+                height: 15%;
+            }
+            h1{
+                font-size: 1em;
+            }
+            h2{
+                font-size: 0.7em;
+                margin-right: 70%;
+            }
+            .footer{
+                font-size: 0.5em;
+            }
+            body>main{
+                width: 100vh;
+                margin-top: 65%;
+                margin-left: -2%;
+            }
+            .trabajo1{
+                width: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+            .trabajo1 h2{
+                font-size: 1em;
+            }
+            .trabajo1 p{
+                font-size: 00.7em;
+            }
+            .img_link{
+                width: 90%;
+                margin-left: 5%;
+                margin-top: 5px;
+                margin-bottom: -5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>marta serralta</h1>
+        <h2>Hola soy Marta Serralta Bernabéu, estudiante de diseño gráfico, y en este portfolio muestro los trabajos realizados en la asignatura de sistemas de representacón.</h2>
+        <div class="footer">
+            <h3:>Instagram: martaserralta_ <br>facebook: martaserralta <br>serraltabm@easdalcoi.com <br>646 49 55 14</h3>
+        </div>
+    </header>
+    <main>
+        <div class="trabajo1">
+            <h2>1_llocweb</h2>
+            <p>En este primer trabajo hemos aprendido las herramientas básicas que tiene el html a la hora de empezar un proyecto.</p>
+            <div class="img_link">
+                <a href="https://martaserralta.github.io/1_llocweb/"><img src="img/Captura_1_llocweb.png" alt="" ></a>
+            </div>
+        </div>
+        <div class="trabajo1">
+            <h2>2_llocweb_img</h2>
+            <p>En este trabajo evolucionamos el previamente realizado, y aprendimos a enlazar elementos.</p>
+            <div class="img_link">
+                <a href="https://martaserralta.github.io/2_llocweb_img/"> <img src="img/Captura_2_llocweb_img.png" alt=""></a>
+            </div>
+        </div>
+        <div class="trabajo1">
+            <h2>3_llocweb_audio</h2>
+            <p>En la realización de este trabajo aprendimos a enlazar imágenes, audios y videos, en diferentes formatos.</p>
+            <div class="img_link">
+                <a href="https://martaserralta.github.io/3_img_video_audio_css/"><img src="img/Captura_3.png" alt=""></a>
+            </div>
+        </div>
+        <div class="trabajo1">
+            <h2>4_gallery</h2>
+            <p>En la realizacón de este trabajo aprencimos como funciona el grid en el lenguaje css.</p>
+            <div class="img_link">
+                <a href="https://martaserralta.github.io/4_gallery/"><img src="img/Captura_4.png" alt=""></a>
+            </div>
+        </div>
+        <div class="trabajo1">
+            <h2>5_grid</h2>
+            <p>En la realizacón de este trabajo aprencimos a diseñar una ágina web en función del tamaño de la pantalla.</p>
+            <div class="img_link">
+                <a href="https://martaserralta.github.io/5_grid/"><img src="img/Captura_5.png" alt=""></a>
+            </div>
+        </div>
+        <div class="trabajo1">
+            <h2>6_neoplástica</h2>
+            <p>En la realizacón de este trabajo aprencimos a trabajar la función del grid template en css para organizar los contenidos.</p>
+            <div class="img_link">
+                <a href="https://martaserralta.github.io/6_grid_neoplasticismo/"><img src="img/Captura_6.png" alt=""></a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
